@@ -1,0 +1,22 @@
+{
+  "name": "node-examples",
+  "version": "1.0.0",
+  "description": "A simple nodejs repo with examples from nodejs in action book",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/von-berlichingen/node-examples.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Anis Ben Amara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/von-berlichingen/node-examples/issues"
+  },
+  "homepage": "https://github.com/von-berlichingen/node-examples#readme"
+}
