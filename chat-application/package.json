@@ -1,0 +1,16 @@
+{
+  "name": "chat-application",
+  "version": "1.0.0",
+  "description": "A small event-driven chat application using Node allowing users to chat online with each other by entering messages info into a simple form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mime": "1.3.6",
+    "socket.io": "~0.9.6"
+  }
+}
