@@ -1,0 +1,15 @@
+{
+  "name": "serial-flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nimble-example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nimble": "0.0.2"
+  }
+}

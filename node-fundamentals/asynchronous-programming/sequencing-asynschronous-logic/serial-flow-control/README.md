@@ -1,0 +1,4 @@
+# Serial flow control
+In order to execute a number of asynchronous tasks in sequence, you could use callbacks, but if you have a significant number of tasks, you'll have to organize them. If you don't, you'll end up with messy code (callback hell).
+[nested-callback.js](./serial-flow/nested-callback.js) is an examlpe of executing tasks in sequence using callbacks. Although the code is short, it's arguably a bit messy, and there is no easy way to programatically add an additioanl task.
+Alternatively, you can use flow-control tool such as [*Nimble*](https://github.com/caolan/nimble) to execute these tasks. Nimble is straightforward to use and benefits from having a very small codebase). [nimble-example.js](./serial-flow/nimble-example.js) re-implement the previous code snippet using serial flow control.
