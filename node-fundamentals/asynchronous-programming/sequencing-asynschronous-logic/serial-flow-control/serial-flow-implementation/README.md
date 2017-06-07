@@ -1,0 +1,8 @@
+# Implementing serial flow control
+In order to execute a number of asynchronous tasks in sequence using serial flow control, you first need to put the tasks in an array, in the desired order of execution.
+Each task exists in the array as a function. When a task has completed, the task should call a **handler function** to indicate error status and results. The handler function in this implementation will halt execution if there is an error. If there is not an error, the handler will pull the next task from the queue and execute it.
+To demonstrate an implementation of serial flow control, we'll make a simple application that will display a single article's title and URL from a randomly chosen RSS feed. The list of possible RSS feeds will be specified in a text file.
+Our example requires the use of two helper modules from the npm repository.
+* [*request*](https://github.com/request/request) module is a simplified HTTP client that you can use to fetch RSS data.
+* [*htmlparser*](https://github.com/tautologistics/node-htmlparser) module has functionality that will allow you to turn raw RSS data into
+JavaScript data structures.
