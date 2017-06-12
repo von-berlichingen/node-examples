@@ -6,4 +6,4 @@ Covered in this part:
 * Accepting user input from forms
 * Securing applications with HTTPS
 
-Like most modules in Node's core, the http module favors simplicity. High-lever "sugar" APIS are left for third-party frameworks, such as Connect or Express, that greatly simplify the web application building process.
+Like most modules in Node's core, the http module favors simplicity. High-lever "sugar" APIs are left for third-party frameworks, such as Connect or Express, that greatly simplify the web application building process.
