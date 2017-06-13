@@ -1,0 +1,6 @@
+# Handling uploaded files using formidable
+Handling uploads is another very common and important aspect of web development, like uploading a photo and sharing it with others using a link on the web. We can do this using a web browser through HTML form file uploads.
+To handle file uploads properly and accept the file's content, we need to set the `enctype` attribute to `multipart/form-data`, a MIME type suited for **BLOBs** (Binary large objects).
+Parsing multipart requests in a performant and streaming fashion is a nontrivial task, and we won't cover the details in this book, but Node's community has provided several modules to perform this function. On such module is [formidable](https://github.com/felixge/node-formidable).
+What makes *formidable* a great choice for handling file uploads is that it's a streaming parser, meaning it can accept chunks of data as they arrive, parse them and emit specific parts, such as the part headers and bodies. Not only is this approach fast, but the lack of buffering prevents memory bloat, even for very large files such as videos, which otherwise could overwhelm a process.
+[photo-sharing](./) is an HTTP server example that implements the beginning of the file upload server. It responds to `GET` with an HTML form, and it has an empty function for `POST`, in which *formidable* will be integrated to handle file uploading.
